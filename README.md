@@ -20,6 +20,7 @@ Format of User Input
 You will be prompted by the program to enter the value of the first room the maze bot will start at. Once entered the program will then prompt you to enter the adjacent rooms, to finish entering the adjacent rooms simply enter ‘0’. It will then prompt you to enter a room similarly to the first room but note the maze bot will not start from this room. Then it will prompt you to enter the adjacent rooms to that room. This process will repeat until all of the rooms have been entered, once all rooms have been entered simply enter ‘0’ to finish and your final room will be displayed.
 
 Algorithm (Pseudocode)
+```
 FUNCTION mazeBot(dictionary, currentRoom)
 	// ‘alreadyBeenIn’ is a global variable with all the rooms with value ‘False’
 	// at the beginning.
@@ -49,7 +50,7 @@ FUNCTION mazeBot(dictionary, currentRoom)
 	// Returns the output of the mazeBot function when myDict and 
 // largestNum variables are input from 'myDict' and 'firstRoom'.
 	RETURN mazeBot(myDict, largestNum)
-
+```
 Test Data
 NOTE: The user is prompted for user input including the first room and other rooms and all the adjacent rooms, this user input is stored in a dictionary as formatted below.
 Test Case #1 (Original Case)
@@ -142,6 +143,7 @@ Invalid inputted value.
 Format of User Input
 You will be prompted to add letters to the circle repeatedly. To finish entering letters to the circle simply enter ‘0’ (The amount of letters entered must be an even amount otherwise letter ‘D’ will not function properly as there will be no letter on the opposite side of the circle). You will then be prompted to enter the amount of moves. Once entered the result will be displayed (where the counter has landed).
 Algorithm (Pseudocode)
+```
 // ‘moves’ is a variable that stores the value input from the user at the beginning.
 // User input is appended to the ‘array’ for string values and is error checked to 
 // ensure input is either A, B, C, D or E.
@@ -170,7 +172,7 @@ FOR move in range(moves):
 		currentIndex -= len(array)
 	ELSE IF currentIndex < 0 THEN
 		currentIndex += array.length
-
+```
 Test Data
 Test Case #1 (Original Case)
 Input
