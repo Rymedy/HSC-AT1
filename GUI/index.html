@@ -1,0 +1,23 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="containerRight"></div>
+	<canvas id="myCanvas" width="1500" height="800"></canvas>
+	<div class="containerLeft">
+	<span class="font-weight-bold" style="line-height: 0.5rem;">Add a Letter: </span><br><input type="text" id="letter" maxlength="1" size="1">
+	<a onclick="appendLetter()" class="btn btn-1">Submit Letter</a>
+	<br>
+	<br>
+	<span class="font-weight-bold" style="line-height: 0.5rem;">Moves: </span><br><input type="text" id="moves" maxlength="4" size="4">
+	<a onclick="finalResult()" class="btn btn-2">Enter Moves</a>
+	<br>
+	<br>
+	<br>
+	<p class="font-weight-light">NOTE: Amount of letters must be even<br>otherwise letter 'D' will not function correctly.</p>
+	</div>
+	<script src="index.js"></script>
+	</body>
+</html>
